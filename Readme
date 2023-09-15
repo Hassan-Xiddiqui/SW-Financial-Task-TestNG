@@ -1,0 +1,33 @@
+Some Important Key Points:
+
+1. This project is made via using IDE named as IntelliJ Idea
+2. In the Dependency folder there is a Chrome Driver (ver.117.0) & MS Edge Driver (ver.116)
+3. If you have previous version of chromedriver you can replace it with your own current using one
+4. JDK version 19.0 was used in this framework
+5. In BaseClass Java file which is located at src/Test/General/BaseClass.java
+    You will find a @BeforeMethod which has 2 methods i.e "PageObject.chromeConfig()" and "PageObject.edgeConfig()"
+    You can use either of the 2 as by default i have enabled chromeConfig so the test will run on chrome
+    If you enable edgeConfig it will run the test on Edge browser
+6. In Resource Packge you will find ExtentReport and Listner where ExtentReport is the reporting format that i used in TestNG
+
+To Execute The Test:
+
+1. Simply navigate to testng.xml
+2. Open the file and execute it
+
+To View Script @Test:
+
+1. Simply navigate to src/Test/Scripts/Script.java
+2. Open the file and view all the steps that are mentioned with steps
+
+To View Page Object Model:
+
+1. Simply navigate to src/POM/PageObject.java
+2. Open the file and view all the Page Object Models methods and there are also comments mention so that the person viewing can understand
+
+What is Base Class:
+
+1. Simply put all the configuration and Webdriver deployment is handled in BaseClass
+2. BaseClass is necessary in TestNG so that your scripts can be neat and tidy and only performed operations will be viewed in Scripts -> @TEST
+
+After Executing the Test in Reports folder there will be an html file generated where you can view it in the browser.
